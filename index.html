@@ -1,0 +1,621 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Gaurav Bhardwaj</title>
+
+<script src="https://cdn.tailwindcss.com"></script>
+<script src="https://unpkg.com/lucide@latest"></script>
+<link rel="stylesheet" href="./CSS/Style.css">
+<link rel="stylesheet" href="./CSS/responsive.css">
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet" />
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet" />
+
+</head>
+
+<body>
+
+<div class="app">
+
+  <aside class="nav-wrapper">
+    <div class="initials">GB</div>
+    
+    <div class="nav-list">
+
+      <div class="nav-item active" onclick="showSection('home', this, event)">
+        <i data-lucide="home"></i>
+        <span>Home</span>
+      </div>
+
+      <div class="nav-item" onclick="showSection('about', this, event)">
+        <i data-lucide="user"></i>
+        <span>About</span>
+      </div>
+
+      <div class="nav-item" onclick="showSection('skills', this, event)">
+        <i data-lucide="award"></i>
+        <span>Skills</span>
+      </div>
+
+      <div class="nav-item" onclick="showSection('work', this, event)">
+        <i data-lucide="briefcase"></i>
+        <span>Work</span>
+      </div>
+
+      <div class="nav-item" onclick="showSection('contact', this, event)">
+        <i data-lucide="mail"></i>
+        <span>Contact</span>
+      </div>
+
+    </div>
+    
+    <div></div>
+  </aside>
+
+  <main class="main">
+
+    <section id="home" class="section active">
+      <div class="home-container">
+        <h1 class="main-title">HI, I'M Gaurav</h1>
+
+        <div class="content-row">
+          <div class="col-left">
+            <p class="description">
+              Every dataset tells a story<br>
+              I help uncover insights<br>
+              that truly matter <span class="emoji">🙂</span>
+            </p>
+          </div>
+
+          <div class="col-center avatar-tilt">
+            <img src="Images/avatar.png" alt="Hello! I am Gaurav, Thanks for the visit." class="avatar-img" id="avatarTilt" />
+          </div>
+
+          <div class="col-right"></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="section">
+      <div class="about-container">
+        <div class="about-content">
+          <h1 class="about-title">About Me</h1>
+          <div class="about-divider"></div>
+          <p class="about-text">
+            Hey, I’m Gaurav.
+          </p>
+          <p class="about-text">
+            I’m drawn to patterns, discipline, and stories whether they emerge from complex 
+            information or quiet moments of curiosity. I enjoy exploring ideas, asking better 
+            questions, and shaping clarity from chaos. Learning and growth sit at the center of
+             how I work, and I’m always refining my thinking, experimenting with new tools, and
+              finding better ways to turn insight into impact through thoughtful storytelling.
+          </p>
+          <p class="about-text">
+            Outside of work, I bring the same focus and curiosity into my personal world. 
+            Training at the gym keeps me grounded and disciplined, while anime and PC gaming
+             fuel my imagination through immersive worlds, characters, and challenges. Both 
+             influence how I approach problems with consistency, curiosity, and a drive to 
+             improve a little every day.
+          </p>
+          <p class="about-text">
+            My philosophy:<br> Always grinding. Always growing.
+          </p>
+        </div>
+        
+        <div class="about-image-section">
+          <img
+            src="Images/gaurav.jpg"
+            class="about-image"
+            alt="About Gaurav Bhardwaj"
+          />
+        </div>
+      </div>
+    </section>
+    
+    <section id="skills" class="section">
+  <div class="skills-container">
+
+    <h1 class="skills-title">Skills & Expertise</h1>
+<div class="skills-divider"></div>
+
+
+    <div class="skills-grid">
+
+      <div class="skill-card">
+        <i data-lucide="brain"></i>
+        <h3>Machine Learning</h3>
+        <p>
+          Building predictive and intelligent systems using structured and unstructured data.
+        </p>
+        <div class="skill-tags">
+          <span>Supervised Learning</span>
+          <span>Unsupervised Learning</span>
+          <span>Scikit-learn</span>
+          <span>TensorFlow</span>
+          <span>PyTorch</span>
+          <span>Model Optimization</span>
+        </div>
+      </div>
+
+      <div class="skill-card">
+        <i data-lucide="database"></i>
+        <h3>Data Science</h3>
+        <p>
+          Turning raw data into insights through analysis, modeling, and storytelling.
+        </p>
+        <div class="skill-tags">
+          <span>Pandas</span>
+          <span>NumPy</span>
+          <span>EDA</span>
+          <span>Feature Engineering</span>
+          <span>Matplotlib</span>
+          <span>Seaborn</span>
+        </div>
+      </div>
+
+      <div class="skill-card">
+        <i data-lucide="bar-chart-3"></i>
+        <h3>Data Analysis</h3>
+        <p>
+          Extracting trends and insights to support data-driven business decisions.
+        </p>
+        <div class="skill-tags">
+          <span>SQL</span>
+          <span>Power BI</span>
+          <span>Tableau</span>
+          <span>Dashboards</span>
+          <span>KPI Analysis</span>
+        </div>
+      </div>
+
+      <div class="skill-card">
+        <i data-lucide="layout"></i>
+        <h3>Frontend Development</h3>
+        <p>
+          Designing and developing responsive, elegant, and user-friendly interfaces.
+        </p>
+        <div class="skill-tags">
+          <span>HTML</span>
+          <span>CSS</span>
+          <span>JavaScript</span>
+          <span>React</span>
+          <span>Tailwind</span>
+          <span>UI/UX</span>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+    
+<section id="work" class="section">
+  <div class="work-container">
+    <h1 class="work-title">My Work</h1>
+    <div class="work-divider"></div>
+    
+    <div class="work-grid">
+      <div class="work-item" onclick="openProject(1)">
+        <img src="images/knn_matrix.png" alt="Breast Cancer Prediction" class="work-image">
+        <div class="work-content">
+          <h3 class="work-item-title">Breast Cancer data prediction (KNN)</h3>
+          <p class="work-item-desc">Analyzing KNN Distance Metrics on the Diagnostic Wisconsin Breast Cancer Dataset</p>
+        </div>
+        <div class="work-item-overlay">
+          <button class="work-item-button">View Project</button>
+        </div>
+      </div>
+      
+      <div class="work-item" onclick="openProject(2)">
+        <img src="Images/svr.png" alt="Feature Scaling" class="work-image">
+        <div class="work-content">
+          <h3 class="work-item-title">Feature Scaling in SVR</h3>
+          <p class="work-item-desc">Support Vector Regression rely on distance metrics. If your features are on different scales, some dominate others
+             distorting the model’s view of the data.</p>
+        </div>
+        <div class="work-item-overlay">
+          <button class="work-item-button">View Project</button>
+        </div>
+      </div>
+
+      <div class="work-item" onclick="openProject(3)">
+        <img src="Images/dashboard.jpg" alt="powerbi dashboard" class="work-image">
+        <div class="work-content">
+          <h3 class="work-item-title">Heart Failure Patient Analytics Dashboard</h3>
+          <p class="work-item-desc">This project presents an interactive healthcare analytics dashboard built in Power BI, 
+            using the Kaggle Heart Failure Clinical Records dataset.</p>
+        </div>
+        <div class="work-item-overlay">
+          <button class="work-item-button">View Project</button>
+        </div>
+      </div>
+      
+      <div class="work-item" onclick="openProject(4)">
+        <img src="Images/generator.png" alt="Staad.pro Load Combination Generator" class="work-image">
+        <div class="work-content">
+          <h3 class="work-item-title">Staad.pro Load Combination Generator</h3>
+          <p class="work-item-desc">This tool helps structural engineers define load cases, 
+            subcases, coefficients, and automatically generate all valid load combinations with proper numbering.</p>
+        </div>
+        <div class="work-item-overlay">
+          <button class="work-item-button">View Project</button>
+        </div>
+      </div>
+      
+      <div class="work-item" onclick="openProject(5)">
+        <img src="Images/Xgboost.png" alt="Prediction of Concrete Compressive Strength" class="work-image">
+        <div class="work-content">
+          <h3 class="work-item-title">Prediction of Concrete Compressive Strength (XGBoost)</h3>
+          <p class="work-item-desc"> Predicting concrete compressive strength based on mix components allows engineers to optimize material usage, 
+            reduce cost, and ensure structural reliability. (Gradient boosting with k=10 fold cross-validation)</p>
+        </div>
+        <div class="work-item-overlay">
+          <button class="work-item-button">View Project</button>
+        </div>
+      </div>
+      
+      <div class="work-item" onclick="openProject(6)">
+        <img src="Images/linear.jpg" alt="Prediction of Concrete Compressive Strength" class="work-image">
+        <div class="work-content">
+          <h3 class="work-item-title">Prediction of Concrete Compressive Strength (Linear Regression)</h3>
+          <p class="work-item-desc">Predicting concrete compressive strength based on mix components allows engineers to optimize material usage, 
+            reduce cost, and ensure structural reliability.</p>
+        </div>
+        <div class="work-item-overlay">
+          <button class="work-item-button">View Project</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="project-modal" id="projectModal">
+  <div class="modal-content">
+    <div class="modal-header">
+      <h2 class="modal-title" id="modalTitle">Project Title</h2>
+      <button class="modal-close" onclick="closeProject()">×</button>
+    </div>
+    <div class="modal-body" id="modalBody">
+    </div>
+    <div class="modal-footer">
+      <button class="modal-button secondary" onclick="closeProject()">Close</button>
+      <button class="modal-button primary" id="liveDemoBtn">Visit</button>
+    </div>
+  </div>
+</div>
+    
+    <section id="contact" class="section">
+      <div class="contact-container">
+        <h2 class="contact-title">Get in Touch</h2>
+        <p class="contact-subtitle">
+          Have a project in mind or just want to say hello? I'd love to hear from you. 
+          Feel free to reach out through any of the channels below.
+        </p>
+        
+        <div class="contact-divider"></div>
+        
+        <div class="contact-content">
+          <div class="contact-email">
+            <div class="email-label">Send me an email at:</div>
+            <a href="mailto:bhardwaj.13.gaurav@gmail.com" class="email-address">
+              <i data-lucide="mail"></i>
+              bhardwaj.13.gaurav@gmail.com
+            </a>
+          </div>
+          
+          <div class="contact-social">
+            <div class="social-item" onclick="window.open('https://github.com/bhardwaj-gaurav', '_blank')">
+              <div class="social-icon">
+                <i data-lucide="github"></i>
+              </div>
+              <div class="social-label">GitHub</div>
+            </div>
+            
+            <div class="social-item" onclick="window.open('https://www.linkedin.com/in/gaurav-13-bhardwaj/', '_blank')">
+              <div class="social-icon">
+                <i data-lucide="linkedin"></i>
+              </div>
+              <div class="social-label">LinkedIn</div>
+            </div>
+            
+            <div class="social-item">
+              <div class="social-icon">
+                <i data-lucide="map-pin"></i>
+              </div>
+              <div class="social-label">Faridabad, Haryana, India</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+</div>
+
+<script>
+if (typeof lucide !== 'undefined') {
+  lucide.createIcons();
+}
+
+let currentSection = 'home';
+
+function showSection(id, el, event) {
+  if (id === currentSection) return;
+  currentSection = id;
+  
+  createExpandingCircle(event);
+  
+  document.querySelectorAll('.section').forEach(s => {
+    s.classList.remove('active');
+  });
+  
+  const section = document.getElementById(id);
+  if (section) {
+    section.style.animation = 'none';
+    void section.offsetWidth;
+    section.style.animation = 'expandFromIcon 0.8s cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards';
+    
+    section.classList.add('active');
+  }
+  
+  if (el) {
+    document.querySelectorAll('.nav-item').forEach(n => {
+      n.classList.remove('active');
+    });
+    el.classList.add('active');
+  }
+}
+
+function createExpandingCircle(event) {
+  const circle = document.createElement('div');
+  circle.classList.add('expanding-circle');
+  
+  const rect = event.currentTarget.getBoundingClientRect();
+  const x = rect.left + rect.width/2;
+  const y = rect.top + rect.height/2;
+  
+  circle.style.left = `${x}px`;
+  circle.style.top = `${y}px`;
+  circle.style.width = `${rect.width}px`;
+  circle.style.height = `${rect.width}px`;
+  
+  document.body.appendChild(circle);
+  
+  setTimeout(() => {
+    document.body.removeChild(circle);
+  }, 800);
+}
+
+window.addEventListener('load', function() {
+  const homeItem = document.querySelector('.nav-item.active');
+  const fakeEvent = {
+    currentTarget: homeItem
+  };
+  showSection('home', homeItem, fakeEvent);
+});
+const avatar = document.getElementById('avatarTilt');
+const maxTilt = 10;
+
+if (avatar && window.matchMedia('(pointer: fine)').matches) {
+  avatar.addEventListener('mousemove', (e) => {
+    const rect = avatar.getBoundingClientRect();
+    const x = e.clientX - rect.left;
+    const y = e.clientY - rect.top;
+
+    const centerX = rect.width / 2;
+    const centerY = rect.height / 2;
+
+    const rotateX = ((y - centerY) / centerY) * -maxTilt;
+    const rotateY = ((x - centerX) / centerX) * maxTilt;
+
+    avatar.style.transform = `rotateX(${rotateX}deg) rotateY(${rotateY}deg)`;
+  });
+
+  avatar.addEventListener('mouseleave', () => {
+    avatar.style.transform = 'rotateX(0deg) rotateY(0deg)';
+  });
+}
+
+const projects = [
+  {
+    id: 1,
+    title: "Breast Cancer data prediction (KNN)",
+    image: "images/knn_matrix.png",
+    description: "Analyzing KNN Distance Metrics on the Diagnostic Wisconsin Breast Cancer Dataset. <br> Distance Metrics Tested & Their Accuracy:<br> Minkowski (p=3): 0.97,<br> Cosine: 0.96,<br> Euclidean: 0.96,<br> Manhattan: 0.96,<br> Chebyshev: 0.95,<br> Mahalanobis: 0.80,<br> Hamming: 0.63 ",
+    demoUrl: "https://github.com/bhardwaj-gaurav/Breast_Cancer_data_prediction_KNN"
+  },
+  {
+    id: 2,
+    title: "Feature Scaling in SVR",
+    image: "Images/svr.png",
+    description: "Support vector Regression models with and without scaled input features.<br> SVR is highly sensitive to the magnitude of input features, and this project highlights:<br> How the same algorithm can behave differently on unscaled vs scaled technique.<br> The difference in R-Squared, prediction accuracy and model stability when scalling is (or isn't) applied.<br> Why It Happens?<br> SVR rely on distance metrics. If your features are on different scales, some dominate others distorting the model’s view of the data. Always scale your features when using any algorithm that depends on distance or variance.",
+    demoUrl: "https://github.com/bhardwaj-gaurav/Impact_of_Feature_Scaling_in_SVR"
+  },
+  {
+    id: 3,
+    title: "Heart Failure Patient Analytics Dashboard",
+    image: "Images/dashboard.jpg",
+    description: "This project presents an interactive healthcare analytics dashboard built in Power BI, using the Kaggle Heart Failure Clinical Records dataset.<br>  Key Insights:<br>Higher mortality rate observed in older age groups.<br>High blood pressure correlates with increased death events.<br>Ejection fraction tends to decrease with age, indicating higher cardiac risk",
+    features: [
+      "KPIs",
+      "DAX",
+      "Stacked Bar Chart",
+      "Death Event percentage"
+    ],
+    demoUrl: "https://github.com/bhardwaj-gaurav/Heart-Failure-Patient-Analytics-Dashboard"
+  },
+  {
+    id: 4,
+    title: "Staad.pro Load Combination Generator",
+    image: "Images/generator.png",
+    description: "This tool helps structural engineers define load cases, subcases, coefficients, and automatically generate all valid load combinations with proper numbering.<br>This tool streamlines the process of preparing STAAD-compatible load combination commands based on user-defined input load cases. <br>This tool empowers structural engineers by:<br> Automatically generating STAAD-compatible load combination commands.<br> Saving valuable time in the design process.<br>Minimizing errors from manual input.<br>Enhancing overall workflow efficiency.",
+    demoUrl: "https://github.com/bhardwaj-gaurav/staad-load-combination-generator"
+  },
+  {
+    id: 5,
+    title: "Prediction of Concrete Compressive Strength (XGBoost)",
+    image: "Images/Xgboost.png",
+    description: "Predicting concrete compressive strength based on mix components allows engineers to optimize material usage, reduce cost, and ensure structural reliability. (Gradient boosting with k=10 fold cross-validation).<br> XGBoost Regression:<br>R^2 : 0.96<br>MAE (MPa) : 0.89",
+    demoUrl: "https://github.com/bhardwaj-gaurav/Prediction_Concrete_compressive_strength"
+  },
+  {
+    id: 6,
+    title: "Prediction of Concrete Compressive Strength (Linear Regression)",
+    image: "Images/linear.jpg",
+    description: "Predicting concrete compressive strength based on mix components allows engineers to optimize material usage,reduce cost, and ensure structural reliability.<br>",
+    demoUrl: "https://github.com/bhardwaj-gaurav/Prediction_Concrete_compressive_strength"
+  }
+];
+
+function openProject(projectId) {
+  const project = projects.find(p => p.id === projectId);
+  if (!project) return;
+  
+  const modal = document.getElementById('projectModal');
+  const modalTitle = document.getElementById('modalTitle');
+  const modalBody = document.getElementById('modalBody');
+  const liveDemoBtn = document.getElementById('liveDemoBtn');
+
+  modalTitle.textContent = project.title;
+  
+  modalBody.innerHTML = `
+    <img src="${project.image}" alt="${project.title}" class="modal-image">
+    <p class="modal-desc">${project.description}</p>
+  `;
+  
+  liveDemoBtn.onclick = function() {
+    window.open(project.demoUrl, '_blank');
+  };
+  
+  modal.classList.add('active');
+  document.body.style.overflow = 'hidden';
+}
+
+function closeProject() {
+  const modal = document.getElementById('projectModal');
+  modal.classList.remove('active');
+  document.body.style.overflow = 'auto';
+}
+
+document.getElementById('projectModal').addEventListener('click', function(e) {
+  if (e.target === this) {
+    closeProject();
+  }
+});
+
+document.addEventListener('keydown', function(e) {
+  if (e.key === 'Escape') {
+    closeProject();
+  }
+});
+
+const skillCards = document.querySelectorAll('.skill-card');
+
+const observer = new IntersectionObserver(entries => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.style.opacity = '1';
+      entry.target.style.transform = 'translateY(0)';
+    }
+  });
+}, { threshold: 0.2 });
+
+skillCards.forEach(card => {
+  card.style.opacity = '0';
+  card.style.transform = 'translateY(40px)';
+  card.style.transition = 'all 0.6s ease';
+  observer.observe(card);
+});
+
+// touch.js - Mobile touch interaction enhancements
+document.addEventListener('DOMContentLoaded', function() {
+    // Detect touch device
+    const isTouchDevice = 'ontouchstart' in window || navigator.maxTouchPoints > 0;
+    
+    if (isTouchDevice) {
+        // Add touch device class to body for CSS targeting
+        document.body.classList.add('touch-device');
+        
+        // Prevent hover states from sticking on touch devices
+        document.addEventListener('touchstart', function() {}, {passive: true});
+        
+        // Override the showSection function to prevent expanding circle on touch
+        const originalShowSection = window.showSection;
+        window.showSection = function(id, el, event) {
+            if (event && event.type === 'touchstart') {
+                // Don't create expanding circle on touch devices
+                if (typeof createExpandingCircle === 'function') {
+                    // Temporarily replace the function
+                    window.createExpandingCircle = function() {};
+                    originalShowSection(id, el, event);
+                    // Restore after a delay
+                    setTimeout(() => {
+                        window.createExpandingCircle = createExpandingCircle;
+                    }, 1000);
+                }
+            } else {
+                originalShowSection(id, el, event);
+            }
+        };
+        
+        // Improve touch experience for work items
+        const workItems = document.querySelectorAll('.work-item');
+        workItems.forEach(item => {
+            item.addEventListener('touchstart', function() {
+                this.classList.add('touch-active');
+            }, {passive: true});
+            
+            item.addEventListener('touchend', function() {
+                this.classList.remove('touch-active');
+            }, {passive: true});
+        });
+    }
+    
+    // Handle navigation item clicks on touch devices
+    const navItems = document.querySelectorAll('.nav-item');
+    navItems.forEach(item => {
+        item.addEventListener('click', function(e) {
+            if (isTouchDevice) {
+                e.preventDefault();
+                const targetId = this.getAttribute('data-target') || 
+                                 this.getAttribute('onclick')?.match(/'(.*?)'/)?.[1] || 
+                                 'home';
+                const fakeEvent = { currentTarget: this };
+                window.showSection(targetId, this, fakeEvent);
+            }
+        }, {passive: true});
+    });
+});
+
+// Improved hover detection that works with touch
+(function() {
+    // Remove hover styles for touch devices
+    if (('ontouchstart' in window) || (navigator.maxTouchPoints > 0)) {
+        try {
+            // Add class to document body
+            document.body.classList.add('touch-device');
+            
+            // Prevent default behavior for touch events on interactive elements
+            const interactiveElements = document.querySelectorAll('a, button, .nav-item, .work-item');
+            interactiveElements.forEach(el => {
+                el.addEventListener('touchstart', function() {
+                    // Add active class for visual feedback
+                    this.classList.add('touch-active');
+                }, {passive: true});
+                
+                el.addEventListener('touchend', function() {
+                    // Remove active class after delay
+                    setTimeout(() => {
+                        this.classList.remove('touch-active');
+                    }, 150);
+                }, {passive: true});
+            });
+        } catch (e) {
+            console.error('Error in touch detection:', e);
+        }
+    }
+})();
+</script>
+</body>
+</html>
